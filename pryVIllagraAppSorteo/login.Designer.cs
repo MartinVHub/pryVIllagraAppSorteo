@@ -1,6 +1,6 @@
 ﻿namespace pryVIllagraAppSorteo
 {
-    partial class Form1
+    partial class login
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,22 +29,23 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            textBox1 = new TextBox();
+            txtNombreSorteo = new TextBox();
             lblNombreDelSorteo = new Label();
-            button1 = new Button();
+            btnRegistrar = new Button();
             lblFechaDelSorteo = new Label();
             lblCantidadParticipantes = new Label();
-            textBox3 = new TextBox();
+            txtCantidad = new TextBox();
             timer1 = new System.Windows.Forms.Timer(components);
-            dateTimePicker1 = new DateTimePicker();
+            dtpFechaSorteo = new DateTimePicker();
+            btnCancelar = new Button();
             SuspendLayout();
             // 
-            // textBox1
+            // txtNombreSorteo
             // 
-            textBox1.Location = new Point(221, 47);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(146, 23);
-            textBox1.TabIndex = 0;
+            txtNombreSorteo.Location = new Point(221, 47);
+            txtNombreSorteo.Name = "txtNombreSorteo";
+            txtNombreSorteo.Size = new Size(146, 23);
+            txtNombreSorteo.TabIndex = 0;
             // 
             // lblNombreDelSorteo
             // 
@@ -59,14 +60,14 @@
             lblNombreDelSorteo.Text = "NombreDelSorteo";
             lblNombreDelSorteo.Click += lblNombreDelSorteo_Click;
             // 
-            // button1
+            // btnRegistrar
             // 
-            button1.Location = new Point(209, 258);
-            button1.Name = "button1";
-            button1.Size = new Size(136, 29);
-            button1.TabIndex = 2;
-            button1.Text = "Registrar";
-            button1.UseVisualStyleBackColor = true;
+            btnRegistrar.Location = new Point(231, 257);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(115, 34);
+            btnRegistrar.TabIndex = 2;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
             // 
             // lblFechaDelSorteo
             // 
@@ -90,48 +91,59 @@
             lblCantidadParticipantes.TabIndex = 5;
             lblCantidadParticipantes.Text = "CantidadParticipantes";
             // 
-            // textBox3
+            // txtCantidad
             // 
-            textBox3.Location = new Point(221, 183);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(49, 23);
-            textBox3.TabIndex = 6;
+            txtCantidad.Location = new Point(221, 183);
+            txtCantidad.Name = "txtCantidad";
+            txtCantidad.Size = new Size(49, 23);
+            txtCantidad.TabIndex = 6;
             // 
-            // dateTimePicker1
+            // dtpFechaSorteo
             // 
-            dateTimePicker1.Location = new Point(221, 106);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(161, 23);
-            dateTimePicker1.TabIndex = 7;
+            dtpFechaSorteo.Location = new Point(221, 109);
+            dtpFechaSorteo.Name = "dtpFechaSorteo";
+            dtpFechaSorteo.Size = new Size(161, 23);
+            dtpFechaSorteo.TabIndex = 7;
             // 
-            // Form1
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(63, 257);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(114, 33);
+            btnCancelar.TabIndex = 8;
+            btnCancelar.Text = "Cancelar";
+            btnCancelar.UseVisualStyleBackColor = true;
+            // 
+            // login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonHighlight;
-            ClientSize = new Size(602, 450);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(textBox3);
+            ClientSize = new Size(410, 394);
+            Controls.Add(btnCancelar);
+            Controls.Add(dtpFechaSorteo);
+            Controls.Add(txtCantidad);
             Controls.Add(lblCantidadParticipantes);
             Controls.Add(lblFechaDelSorteo);
-            Controls.Add(button1);
+            Controls.Add(btnRegistrar);
             Controls.Add(lblNombreDelSorteo);
-            Controls.Add(textBox1);
-            Name = "Form1";
-            Text = "Form1";
+            Controls.Add(txtNombreSorteo);
+            Name = "login";
+            Text = "Aplicacion";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txtNombreSorteo;
         private Label lblNombreDelSorteo;
-        private Button button1;
+        private Button btnRegistrar;
         private Label lblFechaDelSorteo;
         private Label lblCantidadParticipantes;
-        private TextBox textBox3;
+        private TextBox txtCantidad;
         private System.Windows.Forms.Timer timer1;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker dtpFechaSorteo;
+        private Button btnCancelar;
     }
 }
